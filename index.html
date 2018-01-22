@@ -3,12 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
     <body>
-    <div id="app">
-        {{ message }}
-    </div>
+        <div class="wrapper">
+            <div id="newsCont" class="main-cont">
+                <div id="newsLabel">
+                    <div id="newsHeading">
+                        <h2>NEWS</h2>
+                    </div>
+                    <div id="close">
+                        <input type="image" src="img/x.png" class="closeButton">
+                    </div>
+                </div>
+                <div id="newsArea">
+
+                </div>
+            </div>
+
+            <div id="weatherCont" class="main-cont">
+                {{ message }}
+            </div>
+
+            <div id="timeCont" class="main-cont">
+                <div id="timeLabel">
+                    <div id="timeHeading">
+                        <h2>TIME</h2>
+                    </div>
+                    <div id="timeClose">
+                        <input type="image" src="img/x.png" class="closeButton">
+                    </div>
+                </div>
+                <div id="timeArea">
+
+                </div>
+            </div>
+        </div>
     </body>
     <script type='text/javascript' src="app.js"></script>
 </html>

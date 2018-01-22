@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h2 {
+    font-family: "Verdana", sans-serif;
+    font-weight: lighter;
+    overflow: hidden;
+}
+div {
+    overflow: hidden;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: [left] 20% [center] 60% [right] 20%;
+    grid-template-rows: [main] 100%;
+    grid-column-gap: 5px;
+    margin-top: 2%;
+    /*border: solid thick black;*/
+    height: 45%;
+    width: 100%;
+}
+.main-cont {
+    text-align: center;
+    background: antiquewhite;
+    border-radius: 10px;
+}
+#newsCont,
+#timeArea{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: [news-label] 15% [news-area] 85%;
+    grid-column: left / center;
+    height: 100%;
+    margin-left: 2%;
+}
+#newsLabel,
+#timeLabel{
+    display: grid;
+    margin-right: 2%;
+    margin-left: 2%;
+    grid-template-columns: [news] 75% [close-news] 25%;
+    border-bottom: 2px groove dimgray;
+    border-bottom-width: 80
+}
+#newsHeading,
+#timeHeading{
+    grid-column: news / close-news;
+}
+#close,
+#timeClose{
+    grid-column-start: close-news;
+}
+.closeButton {
+    border-radius: 35%;
+    /*-webkit-transition: width 1s, height 1s;*/
+    -moz-transition: all 1.7s ease-in;
+    /*-ms-transition: width time;*/
+    /*-o-transition: width time;*/
+    transition: all 1.7s ease-in;
+    margin-top: 20%;
+}
+.closeButton:hover {
+    background-color: white;
+}
+#weatherCont {
+    grid-column: center / right;
+    /*width: 60%;*/
+    height: 100%;
+}
+#timeCont {
+    grid-column-start: right;
+    height: 100%;
+    margin-right: 2%;
+}
